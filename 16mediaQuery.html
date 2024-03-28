@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fontFormat {
+            font-size: 70px;
+            background-color: pink;
+        }
+        .container1 {
+            width:100%;
+            height: 200px;
+            border-style: dotted;
+        }
+        .align-left{
+            width: 45%;
+            background-color: red;
+            margin: 3px;
+            height: 180px;
+            float: left;
+        }
+        .align-right {
+            width: 45%;
+            background-color: blue;
+            margin: 3px;
+            height: 180px;
+            float:right;
+
+        }
+        @media screen and (max-width:800px){
+            .fontFormat {
+                font-size: 40px;
+                background-color: bisque;
+            }
+        }
+        @media screen and (max-width:550px){
+            .fontFormat{
+                font-size: 20px;
+                background-color: brown;
+                color: white;
+            }
+            .align-left {
+                width: 100%;
+            }
+            .align-right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="fontFormat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cupiditate cumque autem asperiores iste. Expedita ducimus iure tempore nostrum fuga.</h1>
+
+<picture>
+    <source srcset="./Images/natureImage.jpg" media="(max-width:600px)">
+    <img src="./Images/bgImage.jpg" alt="laptop">
+</picture>
+
+<div class="container1">
+    <div class="align-left"></div>
+    <div class="align-right"> </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .fontSize1 {
+            font-size: large;
+            font-weight: bolder;
+        }
+
+        .rowFlex {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+        h5{
+            font-size: 50px;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+            h5{
+                font-size: medium;
+            }
+        }
+    </style>
+    </style>
+</head>
+
+<nav class="navbar navbar-expand-lg bg-warning navbar-dark">
+    <a class="navbar-brand" href="#homeOne">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse my-lg-0" id="navbarNavAltMarkup" style="margin-left: 50%;">
+        <div class="navbar-nav ">
+            <a class="nav-item nav-link fontSize1 active mx-3" href="#aboutMe">About</a>
+            <a class="nav-item nav-link fontSize1 mx-3" href="#portfolio">PortFolio</a>
+            <a class="nav-item nav-link fontSize1 mx-3" href="#">Our Team</a>
+            <a class="nav-item nav-link fontSize1 mx-3" href="#BlogDiv">Blogs</a>
+            <a class="nav-item nav-link fontSize1 mx-3" href="#contactForm">Contact Us</a>
+
+        </div>
+    </div>
+</nav>
+
+<header id="homeOne">
+    <div class="card text-primary ">
+        <img src="./Images/bgImage.jpg" class="card-img " alt="..." style="height:500px">
+        <div class="card-img-overlay text-center">
+            <h5 class="card-title" style="color: rgb(249, 234, 134);">Card title ipsum,praesentium, </h5>
+            <p class="card-text px-5">Lorem ipsum,praesentium, vel provident, quod est facere unde laudantium maiores
+                voluptatem eaque dolores nisi. Debitis nihil sint distinctio saepe!This is a wider card with supporting
+                text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <button class="btn btn-warning text-white">Last updated 3 mins ago</button>
+        </div>
+    </div>
+</header>
+
+<!-- code for about me  -->
+<div class="container  mt-5" id="aboutMe">
+    <h1 class="text-center text-warning">About me</h1>
+    <div class="row">
+        <div class="col-md-5 col-sm-12">
+            <img src="./Images/natureImage.jpg" class="image-fluid rounded-circle mr-lg-0 ml-sm-5" width="300" height="300">
+        </div>
+        <div class="col-md-7 col-sm-12 p-2" style="border-left: 2px solid blue;">
+            <h2 class="display-4 mb-5">Lorem hgfdcvb nbgvhf</h2>
+            <p class="lead p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi numquam molestias, dicta
+                possimus ab eaque ut laudantium tempore nulla dolor. ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, mollitia rem, totam iste ab vitae aperiam beatae placeat culpa laudantium quaerat. Itaque
+                non natus pariatur libero quam iste nesciunt corporis.</p>
+        </div>
+    </div>
+</div>
+
+<!-- code for portfolio  -->
+<div class="container-fluid  mt-5" id="portfolio">
+    <h1 class="text-center text-warning">Portfolio</h1>
+    <div class="rowFlex">
+        <div class="column">
+            <img src="./Images/natureImage.jpg" style="width:100%">
+            <img src="./Images/natureImage.jpg" style="width:100%">
+            <img src="./Images/natureImage.jpg" style="width:100%">
+            <img src="./Images/natureImage.jpg" style="width:100%">
+
+
+        </div>
+
+        <div class="column">
+            <img src="./Images/natureImage.jpg" style="width:100%">
+            <img src="./Images/natureImage.jpg" style="width:100%">
+            <img src="./Images/natureImage.jpg" style="width:100%">
+
+
+        </div>
+
+        <div class="column">
+            <img src="./Images/natureImage.jpg" style="width:100%">
+            <img src="./Images/natureImage.jpg" style="width:100%">
+            <img src="./Images/natureImage.jpg" style="width:100%">
+            <img src="./Images/natureImage.jpg" style="width:100%">
+
+
+        </div>
+
+        <div class="column">
+            <img src="./Images/natureImage.jpg" style="width:100%">
+            <img src="./Images/natureImage.jpg" style="width:100%">
+            <img src="./Images/natureImage.jpg" style="width:100%">
+
+
+        </div>
+    </div>
+</div>
+
+<!-- code for blog  -->
+
+
+<div class="container" id="BlogDiv">
+    <h1 class="text-center text-warning">blog</h1>
+    <div class="card-group">
+        <div class="card">
+          <img src="./Images/bgImage.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Images/bgImage.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Images/bgImage.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+</div>
+
+ <!-- contact form  -->
+
+<div class="container mt-5" id="contactForm">
+    <div class="row ">
+        <div class="col-sm-12 col-md-4">
+            <br><br><br><br><br>
+            <h1 class="text-warning text-right">Get in Touch</h1>
+            </div>
+        <div class="col-sm-12 col-md-8 py-5 bg-info">
+            <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+                </div> 
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                  </div>         
+                <div class="form-group">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </form>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

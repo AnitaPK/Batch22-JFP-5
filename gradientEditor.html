@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gradContainer {
+            width: 400px;
+            height: 400px;
+            border: 2px ridge black;
+        }
+    </style>
+</head>
+<body>
+    <div class="gradContainer" id="grad-container"></div>
+    <input type="color" id="color1">
+    <input type="color" id="color2">
+
+    <button onclick="changeBGColor();">Click me to change bg color</button>
+    <button onclick="LGradient();">Click me to show linear gradient</button>
+    <script>
+document.getElementById('grad-container').style.backgroundColor = 'red';
+
+        function changeBGColor(){
+            c1 = document.getElementById('color1').value;
+            console.log(c1);
+            document.getElementById('grad-container').style.backgroundColor = c1;
+        }
+        LGradient = () =>{
+            c1 = document.getElementById('color1').value;
+            c2 = document.getElementById('color2').value;
+            // document.getElementById('grad-container').style.backgroundImage = `url('./Images/bgImage.jpg')`;
+            document.getElementById('grad-container').style.backgroundImage = `linear-gradient(${c1},${c2})`;
+        }
+    </script>
+</body>
+</html>

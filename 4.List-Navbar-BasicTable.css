@@ -1,0 +1,67 @@
+.Navbar {
+    height: 90px;
+    background-color: antiquewhite;
+}
+.Navbar ul li {
+    list-style-type: none;
+    float: left;
+    margin: 14px 10px;
+}
+
+.Navbar ul li a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: rgb(118, 1, 1);
+}
+
+.Navbar ul li a:hover{
+    font-size: 25px;
+}
+
+.logo{
+    width: 90px;
+    height: 75px;
+    display: block;
+    float: left;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+.NavVertical {
+    background-color: beige;
+    height: 250px;
+    margin-top: 10px;
+}
+
+.NavVertical ul li {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+.NavVertical ul li a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: rgb(118, 1, 1);
+}
+.logoCenter {
+    width: 90px;
+    height: 55px;
+    display: block;
+    margin: 5px auto;
+    padding-top: 10px;
+}
+
+table, th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    text-align: center;
+}
+tr{
+    height: 30px;
+}

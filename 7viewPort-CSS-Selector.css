@@ -1,0 +1,48 @@
+h1 {
+    color: blue ;
+}
+
+.classColor {
+    color: chartreuse;
+}
+
+#IDColor {
+    color: blueviolet !important;
+}
+/* 
+table, td, th{
+
+} */
+
+/* div p {
+    background-color: aqua;
+} */
+
+div ~ p {
+    background-color: aqua;
+}
+
+div:hover {
+    background-color: brown;
+}
+
+.formatPara::first-letter{
+    font-size: xx-large;
+}
+.formatPara::first-line {
+    color: cornflowerblue;
+}
+
+h1::after{
+    content: url('./Images/logo.jpg');
+}
+
+li::marker{
+    content: url('./Images/bgImage.jpg');
+}
+
+a[target=_self]{
+    font-size: x-large;
+}
+
+/* = *= $= ^= |= */

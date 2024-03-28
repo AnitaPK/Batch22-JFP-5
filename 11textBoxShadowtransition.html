@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .shadowEffectOnHover {
+            font-size: xx-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: red;
+            text-shadow: 2px 2px 5px orange;
+        }
+
+        .shadowEffectOnHover:hover {
+            color: wheat;
+            text-shadow: 2px 2px 5px orange;
+
+        }
+
+        .shadowForImage {
+            box-shadow: 15px 15px 10px 3px brown;
+        }
+
+        .card {
+            border: 1px solid black;
+            width: 330px;
+        }
+
+        .card:hover {
+            box-shadow: 3px 3px 4px 2px black;
+        }
+
+        .translateDiv {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid black;
+        }
+
+        .translateDiv1 {
+            transform: translate(30px, 30px);
+            transform: rotate(180deg);
+            /* transform: scale(0.1); */
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s, height 4s, font-size 4s, transform 4s;
+        }
+
+        div:hover {
+            /* width: 300px;
+  height:300px;
+  font-size:60px;
+  transform:rotate(180deg);*/
+            animation-name: example;
+            animation-duration: 8s;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: red;
+                transform: rotate(60deg);
+                transform: translateX(300px);
+            }
+
+            25% {
+                background-color: blue;
+                transform: rotate(-60deg);
+            }
+
+            50% {
+                background-color: yellow;
+                transform: rotate(60deg);
+            }
+
+            75% {
+                background-color: green;
+                transform: rotate(-60deg);
+            }
+
+            100% {
+                background-color: black;
+                transform: rotate(60deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Text shadow</h1>
+    <p style="font-size: x-large;text-shadow: 3px 3px 4px red;">Lorem ipsum dolor sit</p>
+    <p style="font-size: xx-large;text-shadow: 3px 3px 4px red, 2px 2px 5px blue;">Lorem ipsum dolor sit</p>
+    <p style="font-size: xx-large;text-shadow: 3px 3px 4px red, 0px 0px 5px rgb(8, 8, 8);">Lorem ipsum dolor sit</p>
+    <p style="font-size: x-large;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;color: white;">Lorem
+        ipsum dolor sit</p>
+    <p style="font-size: x-large;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;color: pink;">Lorem
+        ipsum dolor sit</p>
+    <p class="shadowEffectOnHover">Lorem ipsum dolor sit amet.</p>
+
+    <img src="./Images/natureImage.jpg" alt="image nature" class="shadowForImage">
+
+    <div class="card">
+        <img src="./Images/bgImage.jpg" alt="">
+        <h2>ProductName</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Price $1000</p>
+        <button>Add To Cart</button>
+    </div>
+    <hr>
+
+    <div class="translateDiv"></div>
+    <div class="translateDiv translateDiv1">text</div>
+
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 10s;
+  font-size:20px;
+  border-radius:50%;
+  text-align:center;
+}
+
+/*
+@keyframes example {
+  from {background-color: red; font-size:20px;}
+  to {background-color: yellow; font-size:40px;}
+}*/
+
+@keyframes example {
+  0% {background-color: red; font-size:20px;}
+  20%{}
+  40%{transform:translate(30px,30px)}
+  60%{color:green;transform:rotate(30deg)}
+  80%{}
+  100% {background-color: yellow; font-size:40px;}
+
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div>hello</div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+</body>
+</html>

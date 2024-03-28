@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+    .container1{
+        background-color: rgb(43, 52, 226);
+        display: grid;
+        width: 99%;
+        height: 700px;
+        /* grid-template-rows: 133px 133px 133px;
+        grid-template-columns:133px 133px 133px ; */
+        /* grid-template-columns: repeat(3fr); */
+        grid-template-rows: 90px 1fr 90px;
+        grid-template-columns: 100px 1fr 1fr;
+       gap: 15px;
+       padding: 0.5%;
+    }
+    .gridItem {
+        background-color: rgb(140, 255, 127);
+        /* width: 122px;
+        height: 122px; */
+    }
+    .gridItemNav {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        /* grid-row: 1 / span 3; */
+        background-color: rgb(151, 235, 204);
+    }
+    .gridItemAside {
+        background-color: aqua;
+    }
+    .gridItemFooter {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        /* grid-row: 1 / span 3; */
+        background-color: rgb(122, 122, 122);
+    }
+</style>
+</head>
+<body>
+    <div class="container1">
+        <div class="gridItemNav">Navbar // Header</div>
+        
+        <div class="gridItemAside">aside navbar</div>
+        <div class="gridItem">Section One</div> 
+        <div class="gridItem">Section Two</div>
+       
+        <div class="gridItemFooter">Footer</div>
+
+    </div>
+</body>
+</html>

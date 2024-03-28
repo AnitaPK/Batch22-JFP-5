@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th{
+            border: 2px ridge black;
+        }
+        .stichedLook {
+            width: 150px;
+            height: 40px;
+            background-color: rgb(69, 154, 244);
+            border: 2px dashed white;
+            outline: 5px solid rgb(69, 154, 244);
+            border-radius: 9px;
+            margin-left: 30px;
+        }
+        p{
+            font-family:Georgia, 'Times New Roman', Times, serif ;
+        }
+        p::first-letter{
+            color: blue;
+        }
+        p::first-line{
+            color:rgb(93, 185, 238);
+        }
+        .subscribeBtn {
+            font-family:Verdana, Geneva, Tahoma, sans-serif ;
+            color: white;
+            background-color: rgb(110, 164, 234);
+            font-weight: bolder;
+            font-size: x-large;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 20px;
+        }
+        div.background {
+  background: url('./Images/floral_flower_garden.jpg!d') repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+    </style>
+</head>
+<body>
+    <h1>Table</h1>
+    <table>
+        <tr>
+            <th>Quick</th>
+            <th colspan="2">brown fox</th>
+            <th>jumps</th>
+        </tr>
+        <tr>
+            <th rowspan="3">over the</th>
+            <th>lazy</th>
+            <th>dog</th>
+            <th>and</th>
+        </tr>
+        <tr>
+            <th>then</th>
+            <th>it</th>
+            <th>fall</th>
+        </tr>
+        <tr>
+            <th colspan="3">prey to a lion</th>
+        </tr>
+    </table>
+    <h1>Create stitched look</h1>
+
+
+    <div class='stichedLook'></div>
+    <br>
+    <button class='stichedLook'></button>
+<h1></h1>
+<p>StyleX combines the strengths and avoids the weaknesses of both inline styles and static CSS. Defining and using styles requires only local knowledge within a component, and avoids specificity issues while retaining features like Media Queries. StyleX builds optimized styles using collision-free atomic CSS which is superior to what could be authored and maintained by hand.</p>
+
+<button class="subscribeBtn">Subscribe Now</button>
+<hr>
+<div class="background">
+    <div class="transbox">
+      <p>This is some text that is placed in the transparent box.</p>
+    </div>
+  </div>
+
+</body>
+</html>

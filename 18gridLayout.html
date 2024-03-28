@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+   /* .container1{
+             display: grid;
+             background-color: rgb(198, 198, 230);
+            width: 98%;
+            height: 500px;    
+            grid-template-areas: 'navbar navbar navbar navbar navbar'
+                                  'aside section section section1 section1'
+                                  'footer footer footer footer footer';
+            gap:15px;
+    }
+    .itemGridNavbar{
+        height: 90px;
+        grid-area: navbar;
+        background-color: aqua;
+    }
+
+    .itemGridFooter{
+        height: 190px;
+        grid-area: footer;
+        background-color: gray;
+    }
+    .itemGridSection {
+        grid-area: section;
+        background-color: pink;
+    }
+    .itemGridSection1 {
+        grid-area: section1;
+        background-color: rgb(51, 85, 85);
+    }
+    .itemGridAside {
+        grid-area: aside;
+        background-color: rgb(136, 255, 0);
+    } */
+
+.wrapper {
+    width:700px;
+    /* height: 700px; */
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-areas: 'G S W W'
+                         'O O W W'
+                         'papaya papaya P P';
+    gap:0
+}
+.watermelon{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+</style>
+</head>
+<body>
+    <!-- <div class="container1">
+        <div class="itemGridNavbar"></div>
+        <div class="itemGridAside"></div>
+        <div class="itemGridSection"></div>
+        <div class="itemGridSection1"></div>
+       
+        <div class="itemGridFooter"></div>
+    </div> -->
+   
+    
+    <div class="wrapper">
+        <div class="grapes" style="grid-area: G; background-color: aqua; height: 100px;"></div>
+        <div class="straberry" style="grid-area: S; background-color: rgb(0, 8, 255); height: 100px;"></div>
+        <div class="watermelon" style="grid-area: W;background-color: rgb(26, 255, 0); height: 100px;"></div>
+        <div class="orange" style="grid-area: O; background-color: rgb(255, 174, 0); height: 100px;"></div>
+        <div class="papaya" style="grid-area: papaya; background-color: rgb(204, 255, 0); height: 100px;"></div>
+        <div class="pinnaple" style="grid-area: P;background-color: rgb(255, 47, 0); height: 100px;"></div>
+
+
+    </div>
+</body>
+</html>
